@@ -6,7 +6,13 @@ public class Point{
     y=Y;
   }
 
-
+  public double distanceTo(Point other){
+    double dis = Math.sqrt(Math.pow(other.x - x,2)+Math.pow(other.y - y,2));
+    return dis;
+   }
+   public boolean equals( Point other) {
+     return (other.x == x && other.y == y);
+   }
   public Point(Point p){
     x = p.x;
     y = p.y;
