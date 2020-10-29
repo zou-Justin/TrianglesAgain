@@ -5,7 +5,6 @@ public class Point{
     x=X;
     y=Y;
   }
-
   public double distanceTo(Point other){
     double dis = Math.sqrt(Math.pow(other.x - x,2)+Math.pow(other.y - y,2));
     return dis;
