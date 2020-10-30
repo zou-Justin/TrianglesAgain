@@ -39,13 +39,13 @@ public Triangle(double x1, double y1,double x2, double y2,double x3, double y3){
   }
   public void setVertex(int index, Point newP){
     if (index == 0){
-      newP = v1;
+      v1 = newP  ;
     }
-    if (index == 1){
-      newP = v2;
+    else if (index == 1){
+      v2 = newP;
     }
-    if (index == 2){
-      newP = v3;
+    else if (index == 2){
+      v3 = newP;
     }
   }
 
