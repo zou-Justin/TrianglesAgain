@@ -35,7 +35,7 @@ public Triangle(double x1, double y1,double x2, double y2,double x3, double y3){
     return "isosceles";
   }
   public String toString() {
-    return ("v1" + v1 + "v2" + v2 + "v3" + v3);
+    return ("v1" + v1 + " v2" + v2 + " v3" + v3);
   }
   public void setVertex(int index, Point newP){
     if (index == 0){
