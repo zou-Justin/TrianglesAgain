@@ -14,4 +14,13 @@ public Triangle(double x1, double y1,double x2, double y2,double x3, double y3){
   public double getPerimeter(){
     return v1.distanceTo(v2) + v2.distanceTo(v3) + v3.distanceTo(v1);
   }
+  public String classify(){
+    if (v1.distanceTo(v2) == v2.distanceTo(v3) && v2.distanceTo(v3) == v3.distanceTo(v1)){
+      return "equilateral";
+    }
+    else if (v1.distanceTo(v2) != v2.distanceTo(v3) && v2.distanceTo(v3) != v3.distanceTo(v1)){
+      return "scalene";
+    }
+    return "isosceles";
+  }
 }
